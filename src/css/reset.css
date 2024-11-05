@@ -1,0 +1,8 @@
+/***  GENERIC STYLES ***/
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    transition: 1s;
+  }
+  

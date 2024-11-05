@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- favicon -->
+  <link rel="shortcut icon" href="src/assets/images/ico/favicon.png" type="image/x-icon">
+  <!-- main css -->
+  <link rel="stylesheet" href="./src/css/styles.css" />
+  <!-- reset css -->
+  <link rel="stylesheet" href="./src/assets/css/reset.css">
+  <title>Inverted World</title>
+</head>
+
+<body class="light-theme" aria-label="The site is using the light theme" role="body">
+
+  <header aria-label="Page header.">
+    <audio id="music" autoplay>
+      <source src="./src/assets/musics/normal-world.mpeg" aria-details="Audio do site" />
+    </audio>
+    <div class="header-content">
+      <img class="invert-element" src="./src/assets/images/banner/logo.svg"
+        alt="Main image Inverted World. Frontend DIO Week." />
+      <p class="invert-element" role="text">
+        A journey for those who are not afraid of the unknown. The path to the
+        The upside down world is uncertain, full of obstacles and dangers. However, the
+        reward is great: save Hawkings and the whole world from the clutches of
+        Vecna. Are you prepared? Then click the button below to enter
+        in the Upside Down!
+      </p>
+      <button id="switch-theme-button" onclick="switchTheme()">Invert Worlds</button>
+    </div>
+
+    <div id="top-characters" class="world-characters"></div>
+  </header>
+
+  <main>
+    <div id="bottom-characters" class="world-characters"></div>
+
+    <!-- first session -->
+    <section id="section-inverted-world" class="container">
+      <div class="section-texts">
+        <h2>The Inverted World</h2>
+        <p role="text">
+          The Upside Down looks like a copy of our world, but with creatures
+          horrendous, frightening storms, lots of darkness and entities
+          malignant. A kingdom controlled by Vecna, who has plans to bring
+          all this to our world.
+        </p>
+      </div>
+
+      <img class="invert-element" src="./src/assets/images/content/inverted-world.png"
+        alt="Illustrative image of the Inverted World" />
+    </section>
+
+    <!-- second session -->
+    <section id="section-stranger-things-trailer" class="container">
+      <div class="video-frame" aria-hidden="true">
+        <iframe width="460" height="215" src="https://www.youtube.com/embed/SJ9EFhQ3ANQ?controls=0"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+      <div class="section-texts">
+        <h2>Stranger Things Vol. 4</h2>
+        <p role="text">
+          More experienced, the heroes of Stranger Things also need
+          face bigger challenges than ever before and make decisions that will
+          change their lives forever. Check out the fourth trailer below
+          season.
+        </p>
+      </div>
+    </section>
+
+    <!-- third session -->
+    <section id="section-stranger-things-gallery">
+      <div class="container section-text">
+        <h2>The second most watched series on Netflix</h2>
+        <ul class="gallery-container" role="gallery">
+          <li class="gallery-image invert-element">
+            <img src="./src/assets/images/content/serie-image-01.png" alt="Image by Vecna" />
+          </li>
+          <li class="gallery-image invert-element">
+            <img src="./src/assets/images/content/serie-image-02.png" alt="Illustrative image of Eleven's friends" />
+          </li>
+          <li class="gallery-image invert-element">
+            <img src="./src/assets/images/content/serie-image-03.png" alt="Scared Eleven Image" />
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!--fourth session -->
+    <section id="section-form" class="container">
+      <h2>The Dungeons & Dragons Club</h2>
+      <p>
+        To stop Vecna, the heroes of Stranger Things also need
+        you. Hawkings' most famous D&D Club has vacancies open
+        for your next adventure. If you are fearless, like challenges and
+        Don't be afraid to run D20, it's time to sign up to do it
+        part of the new campaign.
+      </p>
+
+      <div class="form-content">
+        <h3>Join the D&D club and experience <span>another world<span></span></h3>
+
+        <div class="form-container">
+          <form>
+            <label for="name">Full Name</label>
+            <input type="text" name="name" id="txtName">
+
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="txtEmail">
+
+            <label for="level">Level</label>
+            <input type="text" name="level" id="txtLevel">
+
+            <label for="character">Character</label>
+            <textarea name="character" cols="30" rows="10" id="txtCharacter"></textarea>
+
+            <button type="button" id="btnSubscribe">Sign me up</button>
+          </form>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      Project built for didactic purposes, with the aim of putting into practice
+      Practice the knowledge of HTML, CSS and JavaScript learned at DIO._
+    </p>
+    <img src="./src/assets/images/footer/logo.svg" alt="Dio Logo">
+  </footer>
+
+  <script src="./src/script/index.js" defer></script>
+
+</body>
+
+</html>
